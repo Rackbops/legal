@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy - research-triage</title>
+  <meta name="description" content="What research-triage collects, how it uses Google user data, who it shares data with, how long it keeps it, and how to delete it.">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <p class="org"><a href="/">Rackbops</a> / <a href="/">research-triage</a></p>
+    <h1>Privacy policy</h1>
+    <p class="lede">Effective 10 September 2026. This policy covers the research-triage app and its backup client, both operated by Rackbops.</p>
+  </header>
+
+  <main>
+    <h2>Who we are</h2>
+    <p>research-triage is a personal tool built and run by Rackbops for a small number of invited users. There is no public sign-up. Access to the app is controlled by Cloudflare Access, which identifies you by the email address you sign in with.</p>
+
+    <h2>What we collect</h2>
+    <ul>
+      <li><strong>Your email address</strong>, supplied by Cloudflare Access when you sign in. It is used only to identify you and to keep your data separate from other users'.</li>
+      <li><strong>The YouTube video links you submit</strong>, and the video title, channel name and transcript we fetch for them.</li>
+      <li><strong>Your research criteria</strong>: the text you write describing what you are interested in.</li>
+      <li><strong>Gradings and your corrections</strong>: the summaries, takeaways and verdicts the app produces, the ratings and corrections you give them, and the notes you attach.</li>
+      <li><strong>Channels you follow</strong>, and the videos found on them.</li>
+      <li><strong>Operational logs</strong> such as request errors and timings, kept to keep the app running.</li>
+    </ul>
+
+    <h2>Google user data</h2>
+    <p>The app uses Google services in two places. In both, research-triage's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <h3>YouTube account connection (optional)</h3>
+    <p>If you choose to connect your YouTube account, we request the YouTube permission and use it for exactly two things:</p>
+    <ul>
+      <li>Reading the list of channels you subscribe to, so you can choose which of them to follow inside the app. We store only the channel IDs and titles of the channels you pick.</li>
+      <li>Creating one private playlist in your YouTube account and adding to it the videos you mark as kept.</li>
+    </ul>
+    <p>We store the access credential Google gives us so the connection keeps working. We do not read your watch history, comments, likes, or anything else, and we never post, comment or change your subscriptions. Disconnecting your account in the app revokes the credential with Google and deletes our copy of it.</p>
+    <h3>Google Drive (backups)</h3>
+    <p>The operator's backup client copies the app's database to a Google Drive folder in the operator's own Google account, using the <code>drive.file</code> permission. That permission limits the client to files it created itself. The backups contain the data described above for all users of the app, and are kept on a rolling schedule of daily, weekly and monthly copies, the longest of which is retained for about six months.</p>
+
+    <h2>How we use your data</h2>
+    <p>Only to provide the app to you: fetching and grading videos, keeping your history, learning from your corrections, and backing the service up. We do not use your data for advertising, we do not build profiles for anyone else, and we do not sell it.</p>
+
+    <h2>Who we share it with</h2>
+    <ul>
+      <li><strong>Anthropic.</strong> To grade a video, the transcript and your research criteria are sent to Anthropic's Claude model, which returns the summary and verdict. Anthropic processes that text under its own terms.</li>
+      <li><strong>Google.</strong> YouTube requests are made to Google on your behalf when you connect your account; backups are stored in Google Drive as described above.</li>
+      <li><strong>Cloudflare.</strong> Cloudflare Access sits in front of the app and handles sign-in.</li>
+    </ul>
+    <p>No one else receives your data. We do not share it with advertisers or data brokers.</p>
+
+    <h2>Where it lives and how long we keep it</h2>
+    <p>The app and its database run on hardware operated by Rackbops. Your data is kept for as long as your access to the app lasts. You can delete individual videos and their gradings from inside the app at any time, disconnect your YouTube account at any time, and export everything the app holds about you as a ZIP file from your profile page. If you want your whole account removed, contact us and we will delete it, including from backups as they age out.</p>
+
+    <h2>Security</h2>
+    <p>Access to the app requires signing in through Cloudflare Access. The database and its backups are reachable only by the operator. Credentials for Google services are stored on the operator's servers and are never published.</p>
+
+    <h2>Children</h2>
+    <p>The app is not directed at children and is available only to invited adults.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version is published at this address with a new effective date.</p>
+
+    <h2>Contact</h2>
+    <p>Open an issue at <a href="https://github.com/Rackbops/legal/issues">github.com/Rackbops/legal/issues</a>, or use the developer contact email shown on the Google sign-in screen.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Rackbops. <a href="/">Home</a> &middot; <a href="/terms/">Terms</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>research-triage</title>
+  <meta name="description" content="research-triage is a personal research-triage tool by Rackbops: submit a YouTube video, get it graded against your stated research interests, keep the history, learn from your corrections.">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <p class="org"><a href="/">Rackbops</a></p>
+    <h1>research-triage</h1>
+    <p class="lede">A personal research-triage tool. You give it a YouTube video link; it fetches the transcript, grades the video against the research interests you wrote down, keeps your history, and learns from your corrections.</p>
+  </header>
+
+  <main>
+    <h2>What the app does</h2>
+    <ul>
+      <li>Fetches the transcript of a YouTube video you submit.</li>
+      <li>Produces a summary, key takeaways and a keep / grey-area / drop verdict against your own research criteria, using an AI model.</li>
+      <li>Keeps your grading history and your corrections so later verdicts follow your judgement more closely.</li>
+      <li>Optionally follows YouTube channels you choose, so new uploads from them are graded automatically.</li>
+    </ul>
+
+    <h2>How it uses Google services</h2>
+    <p><strong>YouTube.</strong> If you connect your YouTube account, research-triage reads the list of channels you subscribe to, so you can pick which ones to follow inside the app, and it creates one private playlist in your YouTube account to which it adds videos you keep. It does nothing else with your YouTube account, and you can disconnect at any time, which revokes its access.</p>
+    <p><strong>Google Drive.</strong> The operator's backup client stores copies of the app's database in a Google Drive folder that the client creates. It uses the <code>drive.file</code> permission, which limits it to files it created itself; it cannot see anything else in the Drive.</p>
+
+    <h2>Who runs it</h2>
+    <p>research-triage is built and operated by <a href="https://github.com/Rackbops">Rackbops</a> for a small number of invited users. It is not a public service and has no sign-up.</p>
+
+    <h2>Policies</h2>
+    <ul>
+      <li><a href="/privacy/">Privacy policy</a></li>
+      <li><a href="/terms/">Terms of service</a></li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Questions about the app or these policies: open an issue at <a href="https://github.com/Rackbops/legal/issues">github.com/Rackbops/legal/issues</a>.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Rackbops. <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a></p>
+  </footer>
+</body>
+</html>
